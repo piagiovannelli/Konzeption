@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt-Doku</title>
+    <link rel="stylesheet" href="mp.css">
+    <link rel="stylesheet" href="mp.ts">
+</head>
+
+<body>
+    <header>
+        <h1>Die (Un)sichtbare Last</h1>
+        <p></p>
+    </header>
+
+    <main>
+        <section id="project">
+            <h2>Projektbeschreibung</h2>
+            <p class="project-description">(Un)sichtbare Last ist ein eindringliches Videoprojekt, das die Unsicherheit und Bedrohung, der sich viele Frauen auf ihren alltäglichen Wegen ausgesetzt fühlen, thematisiert.</p>
+            <p>Die Intention dieses Projekts ist es, die Unsichtbarkeit dieses Themas zu durchbrechen und Bewusstsein für die Herausforderungen zu schaffen.</p>
+            
+            
+             
+            <style>
+                /* Hier setzen wir die maximale Breite auf 100%, um sicherzustellen, dass das Bild nicht breiter als das Video ist */
+                img {
+                    max-width: 100%;
+                    height: auto; /* Das sorgt dafür, dass das Bild im richtigen Seitenverhältnis bleibt */
+                    display: block; /* Entfernt den unteren Platz, der standardmäßig für Inline-Elemente reserviert ist */
+                    margin: auto; /* Zentriert das Bild auf der Seite */
+                    padding-bottom: 7rem ;
+    
+                }
+            </style>
+            
+        <div class="video-container">
+            <iframe width="560" height="315" src="Abgabe.mov" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div>
+            <button id="toggleButton1" onclick="toggleText('hiddenText1')">Mehr Informationen</button>
+            <button id="toggleButton2" onclick="toggleText('hiddenText2')">Informationen zum Medium</button>
+        </div>
+    
+        <div id="hiddenText1" class="hidden-text">
+    <h1>Moodboard</h1> <br>
+            <img src="Moodboard.png" alt="Moodboard" width="500" height="250"> <br>
+    <h1>Teaser</h1>
+            <img src="FotoDaniel.jpg" alt="Verfolgung" width="550" height="250">
+            <img src="Füße.jpg" alt="Füße" width="550" height="250">
+            Hier ist der eingeblendete Text für Button 1.
+        </div>
+    
+        <div id="hiddenText2" class="hidden-text">
+            Kamera: Eos 1300d <br>
+            Sonstiges: Green Screen-Raum und Equipment des I-Baus der Hochschule Furtwangen
+        </div>
+
+   
+    
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
