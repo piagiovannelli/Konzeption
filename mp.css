@@ -48,6 +48,14 @@ main {
     padding: 1rem;
 }
 
+footer {
+
+    background-color: #000000d6;
+    color: white;
+    text-align: center;
+    padding: -1rem;
+}
+
 #project {
     background-color: #0c0c0cf8;
     padding: 2rem;
